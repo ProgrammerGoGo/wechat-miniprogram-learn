@@ -2,8 +2,12 @@
   "pages": [
     "pages/index/index"
   ],
-  "window": {
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+  "window": {    
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "智慧商城",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#555555",
+    "backgroundTextStyle":"dark"
   }
 }
