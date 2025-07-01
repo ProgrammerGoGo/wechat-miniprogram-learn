@@ -3,8 +3,20 @@ Page({
   data: {
     date: '',
     show: false,
+    name: "张三"
   },
-
+  onLoad(){
+    const that=this;
+    wx.request({
+      url: 'http://127.0.0.1:8080/user',
+      success(res){
+        console.info("======="+res.data)
+        that.setData({
+          name:res.data.name
+        })
+      }
+    })
+  },
   onDisplay() {
     this.setData({ show: true });
   },

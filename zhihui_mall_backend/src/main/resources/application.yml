@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    #通用配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 11111111
+    username: root
+    url: jdbc:mysql://127.0.0.1:3306/learn?serverTimezone=Asia/Shanghai&useUnicode=true&charcterEncoding=UTF-8&useSSL=false
+    #数据源连接池配置
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 500000
+      max-lifetime: 540000
+      connection-timeout: 60000
+      connection-test-query: select 1

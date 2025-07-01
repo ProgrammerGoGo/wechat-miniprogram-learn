@@ -5,13 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    second:10
+    second:10,
+    img:"/images/bg/welcome.jpeg"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    const that = this;
+    wx.request({
+      url: 'http://127.0.0.1:8080/getWelcomePic',
+      success(res){
+        that.setData({
+          img:res.data
+        })
+        console.info("-------------"+that.data.img)
+      }
+    })
+
     // 启动定时器倒计时，每隔一秒
     var interval=setInterval(() => {
       if(this.data.second<=0){
