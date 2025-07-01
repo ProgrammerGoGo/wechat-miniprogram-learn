@@ -1,9 +1,11 @@
 {
+  "entryPagePath": "pages/welcome/welcome",
   "pages": [
     "pages/index/index",
     "pages/activity/activity",
     "pages/notice/notice",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/welcome/welcome"
   ],
   "window": {    
     "navigationBarBackgroundColor": "#000000",
@@ -45,6 +47,8 @@
   },
   "usingComponents": {
     "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
   }
 }
